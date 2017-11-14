@@ -65,15 +65,27 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Hammersmith One"}
 	 were used by Alfred Strickholm. They had tiny the tip diameter on a scale of several micrometers and were used for extracellular recordings from muscle cells. 
 	 In the 50 years to follow, the setup for electrophysiological recordings did not change much, and the majority of work in the field is performed with small number of elecrodes, 
 	 allowing to record from small subsets of neurons in a single brain region. 
-	 It was only in 2016 that a new generation of electrophysiology probes got developed by collaborative effort of scientists in the laboratories in Janelia Research Campus, UCL and Allen Institute for Brain Science. 
+	 It was only in 2016 that a new generation of electrophysiology probes got developed by collaborative effort of scientists in the laboratories in Janelia Research Campus, UCL and Allen Institute for Brain Science and some other institutions. 
 	 Those revolutionery probes are called NeuroPixel; they have ~1,000 recording sites, with an opportunity to record from 384 distinct recording channels simultaneously, across the different regions in the brain. 
-	 This, of course, opens completely new research avenues, such as studying how microcircuits process stimulus, work on planning the upcoming action, and how different layers and even regions in the brain interact with each other.</p>
+	 Another probe, called NeuroSeeker, was developed as well, allowing to record from nearly 1500 channels at once.
+	 This, of course, opens completely new research avenues, such as studying how microcircuits process stimulus, work on planning the upcoming action, and how different layers and even regions in the brain interact with each other.
+	 We performed one of our recordings with NeuroPixel probe, and another one with NeuroSeeker probe.</p>
     <div style="text-align: center;" "margin-top">
 	<img src="neuropixel.png" align="middle" width="150" height="300" >
 	</div>
 	<hr style="width:200px" class="w3-opacity">
-    <h2 class="w3-text-Indigo">Creating an auditory stinulus </h2>
-	<p>Seriously, awesome</p>
+    <h2 class="w3-text-Indigo">Creating an auditory stimulus </h2>
+	<p>The idea behind our experiments is that we wanted to discover activity in the motor cortex, associated with auditory stimuli. In order to do this, we have developed a paradigm, where we 
+	play a one-second tone of a certain frequency (20 kHz), which is within a rat's hearing range, every two seconds. Then, after a random number of trials, which is around 50 times, we switch to a tone of 20Hz, which is 
+	within human, but not rat's hearing range. We expect to see some activity in the rat's motor cortex, associated with the sound. We also expect that when we play the 20Hz stimulus, that the rat can not hear, there will be some 
+	responce, related to the prediction error. 
+	In order to be able to analyse our data, and sincronize it with the stimulus that we were presenting, we sent sincronization pulses, called TTL pulses, as we were playing the sound. 
+	We utilized different pulses for two types of tones that we played.
+	We tested that our paradigm as Andre Marques-Smith, postdoctoral researcher from Kampff lab, was doing his experiment with NeuroPixel probe. </p>
+	<div style="text-align: center;" "margin:70px;">
+	<img src="eph2.jpg" width="400" height="300" >
+	<img src="eph3.jpg" width="400" height="300">
+	</div>
     <hr style="width:200px" class="w3-opacity">
     <h2 class="w3-text-Indigo">Building our own motor </h2>
 	<p> Believe me</p>
