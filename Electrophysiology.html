@@ -88,13 +88,22 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Hammersmith One"}
 	</div>
     <hr style="width:200px" class="w3-opacity">
     <h2 class="w3-text-Indigo">Building our own motor </h2>
-	<p> Believe me</p>
+	<p> When inserting the electrical probe into the brain, manually operating axes of the manipulator can be laborious and the speed of descending the probe can vary a lot. 
+	Therefore, we decided to improve our manipulator that can lower the electrical probe automatically. As our first product, we equipped a manipulator with a motor for Z-axis. 
+	The equipment was 3D-printed and made of plastic, with several components including a holder to clamp our shaft, a carrier for the motor and two gears to transmit the motion. 
+	Our designer Federico said “the most difficult part to DIY our manipulator set is to have a design that can hold the motor and clamp the shaft nicely and stably. 
+	While rotating the gears, the gears wiggle from times to times. What we want to improve from here is to make this manipulator set more stable.” </p>
 	<div style="text-align: center;" "margin-top">
 	<img src="eph1.jpg" align="middle" width="400" height="300" >
 	</div>
 	<hr style="width:200px" class="w3-opacity">
     <h2 class="w3-text-Indigo">Making a code for the motor </h2>
-	<p> Believe me</p>
+	<p> When moving the stereotaxis, this manipulator is connected to a computer where Bonsai, a event-driven, asynchronous environment, reads the value of how much stereotaxis moves. 
+	With this, we can quantify and digitalize the position of the electrical probe. Furthermore, we used Arduino to trigger the motor for the manipulator. 
+	We planned to program a feedback loop which generates commands to the motor and sends the information about the position of the electrical probe back to the computer to update the position. 
+	Bonsai then compares the value from the stereotaxis with the expected value (based on remaining distance and time to run). Having this update every time can correct the errors the motor makes 
+	and make our automated stereotaxis system precise. Our engineer Fran said “This is not a trivial task. Bonsai is an event-based environment, therefore; we needed to program a loop that is compatible 
+	with each event Bonsai receives and initiate the next command by Arduino.”</p>
     <hr style="width:200px" class="w3-opacity">
 	<h2 class="w3-text-Indigo">Data analysis </h2>
 	<p> Absolutely</p>
