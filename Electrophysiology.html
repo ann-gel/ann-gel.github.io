@@ -81,7 +81,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Hammersmith One"}
 	responce, related to the prediction error. 
 	In order to be able to analyse our data, and sincronize it with the stimulus that we were presenting, we sent sincronization pulses, called TTL pulses, as we were playing the sound. 
 	We utilized different pulses for two types of tones that we played.
-	We tested that our paradigm as Andre Marques-Smith, postdoctoral researcher from Kampff lab, was doing his experiment with NeuroPixel probe. </p>
+	We tested that our paradigm as Andre Marques-Smith, postdoctoral researcher from Kampff lab, was doing his experiment with NeuroPixel probe. 
+	We made sure our stimulus works and used it for the Neuroseeker experiment by George Dimitriadis, postdoc in Kampff lab. </p>
 	<div style="text-align: center;" "margin:70px;">
 	<img src="eph2.jpg" width="400" height="300" >
 	<img src="eph3.jpg" width="400" height="300">
@@ -102,35 +103,12 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Hammersmith One"}
 	With this, we can quantify and digitalize the position of the electrical probe. Furthermore, we used Arduino to trigger the motor for the manipulator. 
 	We planned to program a feedback loop which generates commands to the motor and sends the information about the position of the electrical probe back to the computer to update the position. 
 	Bonsai then compares the value from the stereotaxis with the expected value (based on remaining distance and time to run). Having this update every time can correct the errors the motor makes 
-	and make our automated stereotaxis system precise. Our engineer Fran said “This is not a trivial task. Bonsai is an event-based environment, therefore; we needed to program a loop that is compatible 
+	and make our automated stereotaxis system precise. Our engineer Francesca said “This is not a trivial task. Bonsai is an event-based environment, therefore; we needed to program a loop that is compatible 
 	with each event Bonsai receives and initiate the next command by Arduino.”</p>
     <hr style="width:200px" class="w3-opacity">
 	<h2 class="w3-text-Indigo">Data analysis </h2>
-	<p> Absolutely</p>
-	<h3 class="w3-text-Indigo"> <i>Signal filtering </i> </h3>
-	<p> Yeeeeah</p>
-	<h3 class="w3-text-Indigo"> <i> High-pass filters (lower bound) </i> </h3>
-	<p> lalala</p>
-	<div style="text-align: center;">
-	<img src="highpass.png" align="middle" width="300" height="200" >
-	</div>
-	
-	<h3 class="w3-text-Indigo"> <i>Low-pass filters </i></h3>
-	<p> Tralivali</p>
-	<div style="text-align: center;">
-	<img src="lowpass.png" align="middle" width="300" height="200" >
-	</div>
-	<h3 class="w3-text-Indigo"> <i> Our 1-130Hz band-pass filter</i> </h3>
-	<p> Trampampam</p>
-	<h3 class="w3-text-Indigo"><i> Amplifiers</i> </h3>
-	<p> Hehehe</p>
-	<div style="text-align: center;">
-	<img src="inv_opamp.png" align="middle" width="300" height="200" >
-	</div>
-	<h3 class="w3-text-Indigo"> <i> The EEG circuit </i></h3>
-	<div style="text-align: center;" "margin-top">
-	<img src="circuitry.png" align="middle" width="300" height="200" >
-	</div>
+	<p> First, we extracted data by using a Bonsai program from Kampff lab. Then, each of us analized the data by creating an analysis script from scratch in Python. We extracted the spikes from all the channels, and 
+	produced a heatmap of activity, relative to the stimulus onset. </p>
     <hr style="width:200px" class="w3-opacity">
     <h2 class="w3-text-Indigo"> Results </h2>
 	<div style="text-align: center;" "margin:70px;">
@@ -142,7 +120,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Hammersmith One"}
 	<img src="result_phil.png" width="400" height="300">
 	</div>
 	<div style="text-align: center;" "margin:70px;">
-	<img src="result_fran.png" width="400" height="300" >
+	<img src="result_anna.png" width="400" height="300" >
 	<img src="result_phil.png" width="400" height="300">
 	</div>
 </div>
